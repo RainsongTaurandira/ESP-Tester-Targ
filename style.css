@@ -1,0 +1,71 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding-top: 3rem;
+    font-family: Verdana, sans-serif;
+}
+
+.heading {
+    margin: auto;
+    color: charcoal;
+    width: 80vw;
+}
+h1, h2, p {
+    text-align: center; 
+    color: charcoal; 
+    width: 80vw; 
+}
+
+.app-container {
+    margin: auto;
+    width: 28em;
+}
+.light-container {
+    display: flex;
+    /* width: 60%; */
+}
+
+.light {
+    border: solid 3px white;
+    border-radius: 15px;
+    width: 12rem;
+    height: 6rem;
+    margin: 3rem;
+}
+.light:hover {
+    scale: 1.2;
+}
+
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: lightgreen;
+}
+.blue {
+    background-color: blue;
+}
+
+button {
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    width: 90%;
+}
+button:hover {
+    scale: 1.2;
+    background-color: charcoal;
+    color: lightgray;
+}
+
+.tally-container {
+    padding-top: 1rem;
+    margin: auto;
+    width: 28em;
+}

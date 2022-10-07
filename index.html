@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>ESP Tester</h1>
+        <h2>based on Russell Targ's device</h2>
+        <p>Predict the next color by clicking on the box, or click "Pass" button.</p>
+    </div>
+    
+
+<div class="app-container">
+    <!-- <button></button> -->
+    <div class="light-container">
+        <div class="light red" id="red"></div>
+        <div class="light yellow" id="yellow"></div>    
+    </div>
+    <div class="light-container">
+        <div class="light green" id="green"></div>
+        <div class="light blue" id="blue"></div>
+    </div>
+    <button id="pass">Pass</button>
+</div>
+
+<div class="tally-container" id="tally">
+    <div id="guess"></div>
+    <div id="runTally"></div>
+    <div id="guessTally"></div>
+    <div id="correctGuessTally"></div>
+    <div id="score"></div>
+    <div id="p-score"></div>
+</div>
+ 
+<!-- JavaScript links -->
+    <script src="app.js"></script>   
+</body>
+</html>

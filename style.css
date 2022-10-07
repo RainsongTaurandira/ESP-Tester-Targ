@@ -48,6 +48,26 @@ h1, h2, p {
 .blue {
     background-color: blue;
 }
+.red.glow {
+    background-color: lightpink;
+    border: solid 3px red;
+    box-shadow: 5px 5px 12px #FFB6C1;
+}
+.yellow.glow {
+    background-color: lightyellow;
+    border: solid 3px yellow;
+    box-shadow: 5px 5px 12px #FFF8DC;
+}
+.green.glow {
+    background-color: aquamarine;
+    border: solid 3px green;
+    box-shadow: 5px 5px 12px #7FFFD4;
+}
+.blue.glow {
+    background-color: cyan;
+    border: solid 3px blue;
+    box-shadow: 5px 5px 12px #00FFFF;
+}
 
 button {
     background-color: grey;

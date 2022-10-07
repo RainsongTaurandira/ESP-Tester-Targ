@@ -1,4 +1,7 @@
-
+const red = document.getElementById('red');
+const yellow = document.getElementById('yellow');
+const green = document.getElementById('green');
+const blue = document.getElementById('blue');
 const squareArray = ['red', 'yellow', 'green', 'blue'];
 const pass = document.getElementById('pass');
 const guess = document.querySelector('#guess');
@@ -35,6 +38,7 @@ function randomlySelectSquare(event) {
      let selectSquare = Math.floor(Math.random() * squareArray.length);
      let computerSelection = squareArray[selectSquare];
     guess.innerHTML = "The computer RNG selected " + computerSelection;
+
 
     runTally++;
     if (playerGuess === "pass") {

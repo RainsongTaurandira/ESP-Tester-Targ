@@ -15,4 +15,4 @@ At the moment, it only has the most basic of functionality.
 
 -----
 
-Still to do: set LocalStorage, high score, and statistical P-score thing
+Still to do: set LocalStorage, high score, lighting up the RNG's choice, and statistical P-score thing

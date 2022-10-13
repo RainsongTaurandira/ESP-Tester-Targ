@@ -66,6 +66,20 @@ function calcPScore() {
 function updateLocalStorage() {
 
 }
+// function read() {
+// 	const json = localStorage.getItem("score-data");
+
+// 	if (!json) {
+// 		return;
+// 	}
+
+// 	return JSON.parse(json);
+// }
+
+// function save(data) {
+// 	localStorage.setItem("score-data", JSON.stringify(data));
+// }
+
 
 // ========================================================================
 // ------------------  END JS ---------------------------------------------

@@ -33,40 +33,37 @@ h1, h2, p {
     margin: 3rem;
 }
 .light:hover {
+    scale: 1.1;
+}
+
+.target {
     scale: 1.2;
+    box-shadow: 10px 5px 5px white;
 }
 
 .red {
     background-color: red;
 }
+.red.target {
+    background-color: #F68D87;
+}
 .yellow {
     background-color: yellow;
+}
+.yellow.target {
+    background-color: #FBFDD2;
 }
 .green {
     background-color: lightgreen;
 }
+.green.target {
+    background-color: #DBFDD2;
+}
 .blue {
     background-color: blue;
 }
-.red.glow {
-    background-color: lightpink;
-    border: solid 3px red;
-    box-shadow: 5px 5px 12px #FFB6C1;
-}
-.yellow.glow {
-    background-color: lightyellow;
-    border: solid 3px yellow;
-    box-shadow: 5px 5px 12px #FFF8DC;
-}
-.green.glow {
-    background-color: aquamarine;
-    border: solid 3px green;
-    box-shadow: 5px 5px 12px #7FFFD4;
-}
-.blue.glow {
-    background-color: cyan;
-    border: solid 3px blue;
-    box-shadow: 5px 5px 12px #00FFFF;
+.blue.target {
+    background-color: #87E4F6;
 }
 
 button {
@@ -76,8 +73,7 @@ button {
     font-size: 2rem;
     padding: 1.5rem 2rem;
     border-radius: 10px;
-    width: 50%;
-    margin-left: 7rem;
+    width: 90%;
 }
 button:hover {
     scale: 1.2;

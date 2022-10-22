@@ -1,11 +1,12 @@
-const red = document.getElementById('red');
-const yellow = document.getElementById('yellow');
-const green = document.getElementById('green');
-const blue = document.getElementById('blue');
+
 const squareArray = ['red', 'yellow', 'green', 'blue'];
 const pass = document.getElementById('pass');
 const guess = document.querySelector('#guess');
 const lights = document.querySelectorAll('.light');
+const redLight = document.getElementById('red');
+const yellowLight = document.getElementById('yellow');
+const greenLight = document.getElementById('green');
+const blueLight = document.getElementById('blue');
 const runTallySpot = document.querySelector('#runTally');
 const guessTally = document.getElementById('guessTally');
 const correctGuessTally = document.getElementById('correctGuessTally');
@@ -34,11 +35,14 @@ getClick();
 // tally score to make "percentage of guesses that are correct"
 function randomlySelectSquare(event) {
     let playerGuess = event.target.id;
-    //console.log(playerGuess);
-     let selectSquare = Math.floor(Math.random() * squareArray.length);
-     let computerSelection = squareArray[selectSquare];
-    guess.innerHTML = "The computer RNG selected " + computerSelection;
+    let selectSquare = Math.floor(Math.random() * squareArray.length);
+    let computerSelection = squareArray[selectSquare];
 
+    let computerLight = document.getElementById(`${ computerSelection }`);
+    computerLight.classList.add("target");
+
+    guess.innerHTML = "The computer RNG selected " + computerSelection;
+    // computerSelection will be red, blue, green or yellow (not the index number)
 
     runTally++;
     if (playerGuess === "pass") {
@@ -52,35 +56,27 @@ function randomlySelectSquare(event) {
 
     scoreGuesses = correctGuesses/guesses;
     percentageScore = (scoreGuesses * 100).toFixed(2);
-    //console.log(percentageScore);
+    
     score.innerHTML = "Your current score (by percentage correct) is " + percentageScore + "%";
+    guessTally.innerHTML = "You've made " + guesses + " guesses so far this round,";
+    correctGuessTally.innerHTML = "And " + correctGuesses + " have been correct."
+
+    // reset the light-square back to original appearance
+    setTimeout(() => {
+        computerLight.classList.remove("target");
+      }, "1000")
 }
 
 // determine P-score
 // https://statisticsbyjim.com/hypothesis-testing/how-to-find-p-value/
-function calcPScore() {
+// function calcPScore() {
 
-}
+// }
 
 // commit scores to local storage
-function updateLocalStorage() {
-
-}
-// function read() {
-// 	const json = localStorage.getItem("score-data");
-
-// 	if (!json) {
-// 		return;
-// 	}
-
-// 	return JSON.parse(json);
+// function updateLocalStorage() {
+//     localStorage.setItem('highScore', 'percentageScore');
 // }
-
-// function save(data) {
-// 	localStorage.setItem("score-data", JSON.stringify(data));
-// }
+// const highScore = localStorage.getItem('highScore');
 
 
-// ========================================================================
-// ------------------  END JS ---------------------------------------------
-// ========================================================================

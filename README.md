@@ -11,7 +11,7 @@
 HTML, CSS, and vanilla JavaScript; Deployed on Netlify:  
 https://gleaming-rugelach-6dcc3e.netlify.app/ 
 
-At the moment, it only has the most basic of functionality.
+This project is still under development. At the moment, it only has the most basic of functionality.
 
 -----
 
